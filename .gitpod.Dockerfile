@@ -4,7 +4,7 @@ RUN sudo apt-get update && \
     sudo apt-get install -y libgtk-3-dev && \
     sudo rm -rf /var/lib/apt/lists/
 
-FROM ubuntu:20.04
+USER sudo
 
 RUN apt-get update
 RUN apt-get install -y wget
@@ -18,3 +18,5 @@ RUN apt-key add winehq.key
 RUN apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
 RUN add-apt-repository ppa:cybermax-dexter/sdl2-backport
 RUN apt update && apt install -y --install-recommends winehq-stable
+
+USER gitpod
