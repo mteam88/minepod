@@ -5,4 +5,4 @@ RUN sudo apt-get update && \
     sudo rm -rf /var/lib/apt/lists/
 
 RUN sudo apt-get update
-RUN sudo apt install wine64
+RUN sudo apt install -y wine64
