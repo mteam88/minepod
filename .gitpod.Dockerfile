@@ -7,4 +7,4 @@ RUN sudo apt-get update && \
 RUN sudo apt-get update && \
     wget https://launcher.mojang.com/download/Minecraft.deb && \
     sudo dpkg -i Minecraft.deb; exit 0 && \
-    sudo apt -y install -f && \
+    sudo apt -y install -f
