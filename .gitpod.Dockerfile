@@ -5,4 +5,6 @@ RUN sudo apt-get update && \
     sudo rm -rf /var/lib/apt/lists/
 
 RUN sudo apt-get update
-RUN sudo apt install -y wine64
+RUN wget https://launcher.mojang.com/download/Minecraft.deb
+RUN sudo dpkg -i Minecraft.deb
+RUN sudo apt install -f
