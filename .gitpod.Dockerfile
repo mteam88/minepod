@@ -6,7 +6,7 @@ RUN sudo apt-get update && \
 
 # Install novnc
 RUN sudo rm -rf /opt/novnc \
-    && sudo git clone --depth 1 --single-branch --branch pointer-lock-api https://github.com/lhchavez/noVNC.git /opt/novnc \
+    && sudo git clone --depth 1 https://github.com/mteam88/noVNC /opt/novnc \
     && sudo git clone --depth 1 https://github.com/novnc/websockify /opt/novnc/utils/websockify
 
 RUN sudo apt-get update && \
