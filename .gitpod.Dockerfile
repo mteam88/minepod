@@ -1,4 +1,4 @@
-FROM mteam88/workspace-vnc-full:v3
+FROM mteam88/workspace-vnc-full:v4
 
 RUN sudo apt-get update && \
     sudo apt-get install -y libgtk-3-dev && \
