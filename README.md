@@ -5,3 +5,6 @@ Based on the gitpod/workspace-vnc-full docker image, this repository automaticaa
 
 ## tools
 Uses tigervnc, xvfb, and novnc.
+
+## contributing
+Please read the .gitpod.Dockerfile for more information. Any pull requests are welcome.
